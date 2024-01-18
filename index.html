@@ -24,7 +24,7 @@
     <main>
        <section id="kalkulator">
         <table>
-            <tr><th colspan="4"> <input type="text" name="display"></th></tr>
+            <tr><th colspan="3"><input type="text" name="display"></th></tr>
     
             <tr>
                 <td><button>1</button></td>
@@ -45,20 +45,37 @@
             </tr>
     
             <tr>
-                <td><button>,</button></td>
-                <td><button>0</button></td>
-                <td><button class="orange">=</button></td>
+                <td colspan="2"><button>0</button></td>
+                <td><button class="red" id="clear">C</button></td>
             </tr>
         </table>
        </section>
 
        <article id="rumusLuas">
-            ini article rumus Luas
-       </article>
+            <div class="rowArticle">
+                <img src="./assests/Luas.png" alt="gambar_persegi">
 
+                <div class="resultArticle">
+                    <button id="hitungLuas"> Hitung </button>
+                    <p>Hasil :</p>
+                    <p>L = S X S</p>
+                    <span id="hasilLuas"> </span>
+                </div>
+            </div>
+       </article>
+       
        <article id="rumusKeliling" class="article2">
-        ini article rumus Keliling
-        </article>
+            <div class="rowArticle">
+                <img src="./assests/Keliling.png" alt="gambar_persegi">
+
+                <div class="resultArticle">
+                    <button id="hitungKeliling"> Hitung </button>
+                    <p>Hasil :</p>
+                    <p>K = 4 X S</p>
+                    <span id="hasilKeliling"> </span>
+                </div>
+            </div>
+       </article>
     </main>
     <script src="./js/script.js"></script>
 </body>
