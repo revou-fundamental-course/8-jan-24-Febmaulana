@@ -24,29 +24,28 @@
     <main>
        <section id="kalkulator">
         <table>
-            <tr><th colspan="3"><input type="text" name="display"></th></tr>
-    
+            <tr><th colspan="3"><input type="text" id="display"></th></tr>
             <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
+                <td><button onclick="num('1')">1</button></td>
+                <td><button onclick="num('2')">2</button></td>
+                <td><button onclick="num('3')">3</button></td>
             </tr>
     
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
+                <td><button onclick="num('4')">4</button></td>
+                <td><button onclick="num('5')">5</button></td>
+                <td><button onclick="num('6')">6</button></td>
             </tr>
     
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
+                <td><button onclick="num('7')">7</button></td>
+                <td><button onclick="num('8')">8</button></td>
+                <td><button onclick="num('9')">9</button></td>
             </tr>
     
             <tr>
-                <td colspan="2"><button>0</button></td>
-                <td><button class="red" id="clear">C</button></td>
+                <td colspan="2"><button onclick="num('0')">0</button></td>
+                <td><button class="red" onclick="clr()">C</button></td>
             </tr>
         </table>
        </section>
@@ -56,9 +55,9 @@
                 <img src="./assests/Luas.png" alt="gambar_persegi">
 
                 <div class="resultArticle">
-                    <button id="hitungLuas"> Hitung </button>
+                    <button id="hitungLuas" onclick="countLuas()"> Hitung </button>
                     <p>Hasil :</p>
-                    <p>L = S X S</p>
+                    <p id="result1">L = S X S</p>
                     <span id="hasilLuas"> </span>
                 </div>
             </div>
@@ -69,9 +68,9 @@
                 <img src="./assests/Keliling.png" alt="gambar_persegi">
 
                 <div class="resultArticle">
-                    <button id="hitungKeliling"> Hitung </button>
+                    <button id="hitungKeliling" onclick="countKeliling()"> Hitung </button>
                     <p>Hasil :</p>
-                    <p>K = 4 X S</p>
+                    <p id="result2">K = 4 X S</p>
                     <span id="hasilKeliling"> </span>
                 </div>
             </div>
