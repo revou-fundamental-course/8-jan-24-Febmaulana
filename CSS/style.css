@@ -37,11 +37,12 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 13px 9px 0px 9px;
+    margin: 15px 9px 0px 9px;
     text-align: center;
     background-color: white;
     font-family: sans-serif;
     padding: 8px;
+    padding-bottom: 12px;
 }
 
 nav h3{
@@ -57,7 +58,7 @@ nav img{
 }
 
 nav p{
-    margin: 0px 11px;
+    margin: 0px 8px;
     font-size: xx-small;
     margin-bottom: 8px;
 }
@@ -70,12 +71,33 @@ nav.row{
 .row button{
     width: 49%;
     border: none;
-    padding: 4px 0px;
+    padding: 7px 0px;
     cursor: pointer;
     background-color: #280274;
     color: white;
+    border-radius: 3px;
+    font-size: x-small;
 }
 
 .row button:hover{
     background-color: #3652AD;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0px 9px 0px 9px;
+    padding: 8px;
+}
+
+section{
+    background-color: bisque;
+    width: 50%;
+}
+
+article{
+    width: 50%;
+    background-color: brown;
 }

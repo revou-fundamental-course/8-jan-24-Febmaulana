@@ -11,18 +11,55 @@
         <p> <span>Katik</span> Kalkulator Matematik</p>
     </header>
     
-    <nav>
+    <nav onload="hideshow()">
         <h3>Welcome to Katik <span><img src="./assests/speaker.png" alt="toa"></span></h3>
         <p>Hello Gaes!, Selamat datang di katik<br>
-        Web aplikasi sederhana ini bisa bantu kamu untuk menghitung luas dan keliling bangun datar persegi</p>
+        Web aplikasi sederhana, bisa bantu kamu untuk menghitung luas dan keliling bangun datar persegi loh</p>
         <div class="row">
-            <button>Hitung Luas</button>
-            <button>Hitung Keliling</button>
+            <button id="buttonLuas" onclick="hide()">Hitung Luas</button>
+            <button id="buttonKeliling" onclick="show()">Hitung Keliling</button>
         </div>
     </nav>
 
     <main>
-       
+       <section id="kalkulator">
+        <table>
+            <tr><th colspan="4"> <input type="text" name="display"></th></tr>
+    
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+            </tr>
+    
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+            </tr>
+    
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+            </tr>
+    
+            <tr>
+                <td><button>,</button></td>
+                <td><button>0</button></td>
+                <td><button class="orange">=</button></td>
+            </tr>
+        </table>
+       </section>
+
+       <article id="rumusLuas">
+            ini article rumus Luas
+       </article>
+
+       <article id="rumusKeliling" class="article2">
+        ini article rumus Keliling
+        </article>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
